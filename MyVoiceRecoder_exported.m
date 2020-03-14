@@ -7,18 +7,19 @@ classdef MyVoiceRecoder_exported < matlab.apps.AppBase
         PlayButton             matlab.ui.control.Button
         UIAxes                 matlab.ui.control.UIAxes
         PleasePushRECLabel     matlab.ui.control.Label
+        SecLabel               matlab.ui.control.Label
         RECTimeEditFieldLabel  matlab.ui.control.Label
         RECTimeEditField       matlab.ui.control.NumericEditField
-        SecLabel               matlab.ui.control.Label
         Lamp                   matlab.ui.control.Lamp
     end
 
 
     properties (Access = public)
         %Create properties
-        Fs = 20000;
-        nBits = 8 ; 
-        nChannels = 2 ; 
+        
+        Fs = 44100;
+        nBits = 16; 
+        nChannels = 1;
         ID = -1; % default audio input device 
         recorder;
         voice_data;
@@ -36,6 +37,7 @@ classdef MyVoiceRecoder_exported < matlab.apps.AppBase
             %Init
             app.PleasePushRECLabel.Text = "Please push REC.";
             app.UIFigure.Name ='My Voice Recorder';
+
             
         end
 
