@@ -10,7 +10,7 @@ MyVoiceRecoder_exported.m
 	Sorce File.
 MyVoiceRecorder.mlapp
     App Designer file. 
-    If you have MATLAB R2016b,you can edit GUI of this apprication
+    If you have MATLAB R2019b,you can edit GUI of this apprication
 readme.txt
 	This file.
 
